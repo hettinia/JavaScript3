@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+	width: 80%;
+	margin: auto;
+}
+
+.alert-error {
+  color: #9D1C24;
+  background-color: #F8D7DA;
+  height: 50px;
+  padding: 20px 0 0 10px;
+  margin-top: 5px;
+}
+
+.head {
+  background-color: #3F51B5;
+  color: #ffffff;
+  height: 50px;
+  padding: 20px 0 0 10px;
+  margin-top: 5px;;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-weight: bold;
+  padding: 5px 0 5px 5px;
+}
+
+.repoUl {
+  margin: 0;
+  padding: 0;
+}
+
+.repoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.repository {
+  box-shadow: 2px 2px 15px -2px rgba(133,126,133,1);
+  margin: 7px 0 7px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	#root {
+		width: 100%;
+    font-size: 14px;
+	}
+	
+  .head {
+    text-align: center;
+  }
+}
