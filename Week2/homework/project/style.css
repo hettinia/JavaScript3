@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+	width: 80%;
+	margin: auto;
+}
+
+.alert-error {
+  color: #9D1C24;
+  background-color: #F8D7DA;
+  height: 50px;
+  padding: 20px 0 0 10px;
+  margin-top: 5px;
+}
+
+.head {
+  background-color: #3F51B5;
+  color: #ffffff;
+  height: 100px;
+  padding: 0px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.head > h1 {
+  padding: 0.5rem 0 0 1rem;
+}
+
+#repos-List {
+  height: auto;
+  width: 20rem;
+  margin: auto 1rem ;
+  font-size: large;
+}
+
+.title {
+  font-weight: bold;
+  padding: 5px 0 5px 5px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.repo-container, .contributors-container {
+  box-shadow: 2px 2px 15px -2px rgba(133,126,133,1);
+  margin: 7px 0 7px 0;
+  width: 50%;
+}
+
+.repo-container {
+  height: 8rem;
+  margin-right: 0.5rem;
+}
+
+.contributors-ul {
+  font-weight: bold;
+  padding: 5px 0 5px 5px;
+  list-style: none;
+}
+
+.Contributor-li {
+  margin: 1rem 0 1rem 0;
+  border-bottom: 1px solid #dfdcdc;
+}
+
+.Contributor-div {
+  height: 4.5rem;
+}
+
+.contributors-a {
+  margin: auto 1rem; 
+  font-weight: normal;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.contributors-span {
+  margin: 1rem 1rem 0 0; 
+  float: right; 
+  font-weight: normal;
+  font-size: small;
+  text-align: center;
+  width: 2rem;
+  color: #ffffff;
+  background-color: #5f5d5d;
+  border-radius: 0.2rem;
+}
+
+/* Change style to be responsive to ---Mobile devices--- */
+
+@media (max-width: 600px) {
+	#root {
+		width: 100%;
+    font-size: 14px;
+	}
+	
+  .head > h1 {
+    font-size: 1rem;
+    padding: 2rem 0 0 1rem;
+  }
+
+  #repos-List {
+    width: 5rem;
+    margin: auto 1rem ;
+    font-size: small;
+    position: relative;
+    
+  }
+
+  #repos-List option{
+    width: 5rem;   
+    
+  }
+
+  .main-container {
+    display: block;
+  }
+  .repo-container, .contributors-container {
+    width: 100%;
+  }
+}
+
+/* Change style to be responsive to --Tablets devices--*/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  #root {
+		width: 95%;
+    font-size: 14px;
+  }
+  
+  .head > h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0 1rem;
+  }
+}
